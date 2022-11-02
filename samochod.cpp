@@ -23,5 +23,19 @@ void Samochod::wyswietl_samochod()
     if (marka=="BMW")   cout<<marka<<" jest the best :) . Twoj model to: "<<model<<". Rocznik: "<<rocznik<<". Przebieg: "<<przebieg<<"."<<endl ;
     else if (marka=="Audi")   cout<<marka<<" tez jest spoko . Twoj model to: "<<model<<". Rocznik: "<<rocznik<<". Przebieg: "<<przebieg<<"."<<endl ;
     else if (marka=="Porsche")   cout<<marka<<" is my dream! . Twoj model to: "<<model<<". Rocznik: "<<rocznik<<". Przebieg: "<<przebieg<<"."<<endl ;
-    else cout<<"Nieznany marka! Byle nie Cirtoen!";
+    else cout<<marka<<" "<<model<<", rocznik: "<<rocznik<<", przebieg: "
+        <<przebieg<<". Moj pierwszy samochodzik :)"<<endl;
+}
+
+Samochod::Samochod(string ma, string mo, int r, int p)
+{
+    marka = ma;
+    model = mo;
+    rocznik = r;
+    przebieg = p;
+}
+
+Samochod::~Samochod()
+{
+    cout << endl << "Destruktor dla samochodu" << endl;
 }
